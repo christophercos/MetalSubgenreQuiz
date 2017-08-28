@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Metal Subgenre Quiz</title>
+    <!--general style sheet-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300" rel="stylesheet">
+    <!--Animations-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--Font Awesome CDN for social media icons-->
+    <script src="https://use.fontawesome.com/d46cab6097.js"></script>
+    <!--Handlebars template to dynamically add results content onto page-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"></script>
+    <script id="resultsTemplate" type="x-handlebars-template">
+        <div id="quizResults">
+            <h3>Your subgenre is</h3>
+            <h2>{{name}}</h2>
+            <p>{{description}}</p>
+            <img src="{{image}}" />
+        </div>
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="headerContainer">
+                <h1 class="animated fadeInUp">What Metal Subgenre Are You?</h1>
+                <p>What guitar swinging, stage diving, viciously metal sub genre are you? Find out with our advanced quiz algorithm!</p>
+                <a href="#" data-hash="#question1" class="buttonSpecial" id="takeQuiz"><h5>Take The Quiz</h5></a>
+                <img class="animated swing infinite" src="assets/038-rock-and-roll.png">
+            </div>
+        </div>
+    </header>
+    <!--START of quiz-->
+    <section class="quiz">
+        <form action="" class="question" id="question1">
+            <div class="wrapper">
+                <div class="questionContainer">
+                    <div class="questionContent">
+                        <div class="answerContainer">
+                            <h2>On a day-to-day basis, your wardrobe may include:</h2>
+                            <div class="inputContainer">
+                                <div class="answer">
+                                    <input type="radio" name="question1" data-subgenre="nuMetal" id="nuMetal">
+                                    <label for="nuMetal">Baggy pants and a wallet with a chain</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question1" data-subgenre="thrashMetal" id="thrashMetal">
+                                    <label for="thrashMetal">A leather jacket and wifebeater</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question1" data-subgenre="hardRock" id="hardRock">
+                                    <label for="hardRock">Why would I ever wear a shirt?</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question1" data-subgenre="hairMetal" id="hairMetal">
+                                    <label for="hairMetal">A pantsuit and a scarf</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question1" data-subgenre="folkMetal" id="folkMetal">
+                                    <label for="folkMetal">I wear a lot of fur</label>
+                                </div>
+                            </div>
+                            <p class="warning"></p>
+                            <input type="submit" value="Next" class="nextQuestion button boxbutton" data-hash="#question2">
+                        </div>
+                    </div>
+                    <div class="answerImage">
+                        <img data-original="assets/035-leather-jacket.png" class="lazy" alt="leather jacket image">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form action="" class="question" id="question2">
+            <div class="wrapper">
+                <div class="questionContainer">
+                    <div class="questionContent">
+                        <div class="answerContainer">
+                            <h2>Don't think about it, pick an animal:</h2>
+                            <div class="inputContainer">
+                                <div class="answer">
+                                    <input type="radio" name="question2" data-subgenre="thrashMetal" id="thrashMetal2">
+                                    <label for="thrashMetal2">A gigantic tiger</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question2" data-subgenre="nuMetal" id="nuMetal2">
+                                    <label for="nuMetal2">A Phoenix</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question2" data-subgenre="hairMetal" id="hairMetal2">
+                                    <label for="hairMetal2">A big pink dragon</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question2" data-subgenre="folkMetal" id="folkMetal2">
+                                    <label for="folkMetal2">The Loch Ness Monster</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question2" data-subgenre="hardRock" id="hardRock2">
+                                    <label for="hardRock2">A gigantic shark</label>
+                                </div>
+                            </div>
+                            <p class="warning"></p>
+                            <input type="submit" value="Next" class="nextQuestion button boxbutton" data-hash="#question3">
+                        </div>
+                    </div>
+                    <div class="answerImage">
+                        <img data-original="assets/animal.png" class="lazy" alt="tiger image">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form action="" class="question" id="question3">
+            <div class="wrapper">
+                <div class="questionContainer">
+                    <div class="questionContent">
+                        <div class="answerContainer">
+                            <h2>Your weapon of choice, should Civil War erupt in the streets?</h2>
+                            <div class="inputContainer">
+                                <div class="answer">
+                                    <input type="radio" name="question3" data-subgenre="thrashMetal" id="thrashMetal3">
+                                    <label for="thrashMetal3">A lifted pickup truck</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question3" data-subgenre="hardRock" id="hardRock3">
+                                    <label for="hardRock3">My fist (with the horns up, of course)</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question3" data-subgenre="folkMetal" id="folkMetal3">
+                                    <label for="folkMetal3">A mythical battle axe</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question3" data-subgenre="hairMetal" id="hairMetal3">
+                                    <label for="hairMetal3">A big pink dragon</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question3" data-subgenre="nuMetal" id="nuMetal3">
+                                    <label for="nuMetal3">A crowbar</label>
+                                </div>
+                            </div>
+                            <p class="warning"></p>
+                            <input type="submit" value="Next" class="nextQuestion button boxbutton" data-hash="#question4">
+                        </div>
+                    </div>
+                    <div class="answerImage">
+                        <img data-original="assets/023-skull.png" class="lazy" alt="skull image">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form action="" class="question" id="question4">
+            <div class="wrapper">
+                <div class="questionContainer">
+                    <div class="questionContent">
+                        <div class="answerContainer">
+                            <h2>On a Friday night, you will be:</h2>
+                            <div class="inputContainer">
+                                <div clas="answer">
+                                    <input type="radio" name="question4" data-subgenre="nuMetal" id="nuMetal4">
+                                    <label for="nuMetal4">Out on the streets tagging cars</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question4" data-subgenre="hairMetal" id="hairMetal4">
+                                    <label for="hairMetal4">Pouring sugar on things</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question4" data-subgenre="hardRock" id="hardRock4">
+                                    <label for="hardRock4">Making a flower crown</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question4" data-subgenre="folkMetal" id="folkMetal4">
+                                    <label for="folkMetal4">Hunting</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question4" data-subgenre="thrashMetal" id="thrashMetal4">
+                                    <label for="thrashMetal4">Drinking light beer in a parking lot</label>
+                                </div>
+                            </div>
+                            <p class="warning"></p>
+                            <input type="submit" value="Next" class="nextQuestion button boxbutton" data-hash="#question5">
+                        </div>
+                    </div>
+                    <div class="answerImage">
+                        <img data-original="assets/006-rockstar-1.png" class="lazy" alt="female rockstar image">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form action="" class="question" id="question5">
+            <div class="wrapper">
+                <div class="questionContainer">
+                    <div class="questionContent">
+                        <div class="answerContainer">
+                            <h2>What is your favourite junk food?</h2>
+                            <div class="inputContainer">
+                                <div class="answer">
+                                    <input type="radio" name="question5" data-subgenre="hairMetal" id="hairMetal5">
+                                    <label for="hairMetal5">Delicious, delicious candy</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question5" data-subgenre="folkMetal" id="folkMetal5">
+                                    <label for="folkMetal5">Venison</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question5" data-subgenre="hardRock" id="hardRock5">
+                                    <label for="hardRock5">Tacos</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question5" data-subgenre="nuMetal" id="nuMetal5">
+                                    <label for="nuMetal5">Burgers</label>
+                                </div>
+                                <div class="answer">
+                                    <input type="radio" name="question5" data-subgenre="thrashMetal" id="thrashMetal5">
+                                    <label for="thrashMetal5">Pizza (and beer)</label>
+                                </div>
+                            </div>
+                            <p class="warning"></p>
+                            <input type="submit" value="Next" class="nextQuestion button boxbutton" data-hash="#seeMyResults">
+                        </div>
+                    </div>
+                    <div class="answerImage">
+                        <img data-original="assets/001-whiskey.png" class="lazy" alt="whiskey image">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <div class="seeMyResults" id="seeMyResults">
+        <a href="#quizResults" class="buttonSpecial" id="finalSubmit" data-hash="#quizResults"><h5>See my results!</h5></a>
+        <p class="secondWarning"></p>
+    </div>
+    <!--END of quiz-->
+    <!--Quiz results & social media sharing section-->
+    <section id="quizResults">
+        <div class="resultsWrapper">
+            <!--Quiz results will be dynamically added here w/Handlebars-->
+        </div>
+        <!--Twitter widget for sharing quiz-->
+        <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="I just took the Metal Subgenre Quiz! You should too!" data-url="http://metalsubgenre.xyz" data-hashtags="getMetal" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section>
+    <footer>
+        <a href="#" class="buttonSpecial restart">Take Quiz Again</a>
+        <p>&copy; Chris Cosentino and Jocelyn Lum. All Rights Reserved.</p>
+    </footer>
+    <!--jQuery & Javascript sources-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/jquery.lazyload.min.js"></script>
+</body>
+
+</html>
