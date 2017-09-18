@@ -5,12 +5,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { box-sizing: border-box; }
 
-@font-face {
+/*@font-face {
  font-family: "Bough";
  src: url("./fonts/Bough-Regular.otf") format("otf"),
       url("./fonts/bough-regular-webfont.woff") format('woff'),
       url("./fonts/bough-regular-webfont.woff2") format('woff2'),
-}
+}*/
 
 body {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -72,7 +72,7 @@ header img {
 
 h1,
 .buttonSpecial {
-    font-family: 'Bough', cursive;
+    font-family: 'bough', cursive;
     text-transform: capitalize;
     color: #000;
     margin: 0;
