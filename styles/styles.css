@@ -5,13 +5,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { box-sizing: border-box; }
 
-/*@font-face {
- font-family: "Bough";
- src: url("./fonts/Bough-Regular.otf") format("otf"),
-      url("./fonts/bough-regular-webfont.woff") format('woff'),
-      url("./fonts/bough-regular-webfont.woff2") format('woff2'),
-}*/
-
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2rem;
@@ -146,6 +139,8 @@ form.question {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 input[value="Next"] {
@@ -222,7 +217,7 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2rem;
     width: 400px;
     height: 100px;
 }
@@ -237,14 +232,6 @@ footer p {
 MEDIA QUERIES
 ****************************/
 
-@media screen and (max-width: 1000px) {
-    .questionContainer,
-    .headerContainer,
-    .resultsWrapper {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-}
 
 @media screen and (max-width: 970px) {
     form img {
@@ -282,18 +269,23 @@ MEDIA QUERIES
     .answerContainer label {
         font-size: 1.7rem;
     }
+
+    .restart {
+      width: 75%;
+      font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
 
 
     h1 {
-        font-size: 5rem;
+        font-size: 50px;
     }
 
     #finalSubmit {
         width: 300px;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .answerContainer label {
